@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,32 +6,108 @@
 <style>
 body, html {
   height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
 }
 
-.parallax {
-  /* The image used */
-  background-color: #a67f8e;
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
+.color-1, .color-2 {
+  position: relative;
+  opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+}
+.color-1 {
+  background-color:#D17D85;
+  min-height: 100%;
+}
+
+.color-2 {
+  background-color: #A67F8E;
+  min-height: 400px;
+}
+
+/* .bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+} */
+
+/* .caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+} */
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
 }
 </style>
 </head>
 <body>
 
-<div class="parallax"></div>
-
-<div style="height:1000px;background-color:#9E4055;font-size:36px">
-Parisha Reddy
+<div class="color-1">
+  <span>Parisha Reddy</span>
 </div>
 
-<div class="parallax"></div>
+<div style="color: #777;background-color:#9E4055;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Work Experience</h3>
+</div>
+
+<div class="color-2">
+  <span style="background-color:transparent;font-size:25px;color: #f7f7f7;">
+    <p>Experience 1</p>
+    <p>Experience 2</p>
+    <p>Experience 3</p>
+  </span>
+</div>
+
+<div style="color: #777;background-color:#9E4055;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Side Projects</h3>
+</div>
+
+<div class="color-2">
+  <span style="background-color:transparent;font-size:25px;color: #f7f7f7;">
+    <p>Project 1</p>
+    <p>Project 2</p>
+    <p>Project 3</p>
+  </span>
+</div>
+
+<div style="color: #777;background-color:#9E4055;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Awards & Extra-Cirriculars</h3>
+</div>
+
+<div class="color-2">
+  <span style="background-color:transparent;font-size:25px;color: #f7f7f7;">
+    <p>Thing 1</p>
+    <p>Thing 2</p>
+    <p>Thing 3</p>
+  </span>
+</div>
 
 </body>
 </html>
